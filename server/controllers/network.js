@@ -13,6 +13,7 @@ module.exports.displayNetList = (req, res, next) => {
         }
         else
         {
+            var list = netList.sort(compare);
             //console.log(BookList);
             //the partial for the list page
             res.render('network/list', {title: 'Network', NetList: netList});      
@@ -102,4 +103,17 @@ module.exports.performDelete = (req, res, next) => {
              res.redirect('/netList');
         }
     });
+}
+
+function compare(a, b){
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toUpperCase();
+
+    let comparison = 0;
+    if(nameA > nameB) {
+        comparison = 1;
+    } else if(nameA < nameB){
+        comparison = -1;
+    }
+    return comparison;  
 }
