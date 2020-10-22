@@ -7,22 +7,24 @@ let Network = require('../models/network');
 
 let networkController = require('../controllers/network');
 
-/* GET Route for the Book List page - READ Operation */
-router.get('/', networkController.displayNetList);
+function requireAuth(req, res, next)
+{
+    if(!req.isAuthenticated()){
+        return res.redirect('/login');
+    }
+    next();
+}
 
-/* GET Route for displaying the Add page - CREATE Operation */
-router.get('/add', networkController.displayAddPage);
+router.get('/', requireAuth, networkController.displayNetList);
 
-/* POST Route for processing the Add page - CREATE Operation */
-router.post('/add', networkController.processAddPage);
+router.get('/add', requireAuth, networkController.displayAddPage);
 
-/* GET Route for displaying the Edit page - UPDATE Operation */
-router.get('/edit/:id', networkController.displayEditPage);
+router.post('/add', requireAuth, networkController.processAddPage);
 
-/* POST Route for processing the Edit page - UPDATE Operation */
-router.post('/edit/:id', networkController.processEditPage);
+router.get('/edit/:id', requireAuth, networkController.displayEditPage);
 
-/* GET to perform  Deletion - DELETE Operation */
-router.get('/delete/:id', networkController.performDelete);
+router.post('/edit/:id', requireAuth, networkController.processEditPage);
+
+router.get('/delete/:id', requireAuth, networkController.performDelete);
 
 module.exports = router;

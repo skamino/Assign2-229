@@ -22,6 +22,18 @@ module.exports.displayServicesPage = (req, res, next) => {
     res.render('index', { title: 'Services', displayname: req.user ? req.user.displayname : "Welcome"});
 }
 
+module.exports.displayResume = function(req, res, next) {
+    let options = {
+        root: './',
+        dotfiles: 'allow',
+        headers: {
+          'x-timestamp': Date.now(),
+          'x-sent': true
+        }
+      }
+      res.sendFile('/public/TestResume.pdf', options);
+};
+
 module.exports.displayContactPage = (req, res, next) => {
     res.render('index', { title: 'Contact', displayname: req.user ? req.user.displayname : "Welcome"});
 }

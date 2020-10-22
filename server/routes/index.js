@@ -3,10 +3,18 @@ let router = express.Router();
 
 let indexController = require('../controllers/index');
 
+function requireAuth(req, res, next)
+{
+    if(!req.isAuthenticated()){
+        return res.redirect('/login');
+    }
+    next();
+}
+
 /* GET home page. */
 router.get('/', indexController.displayHomePage);
 
-/* GET home page. */
+/* because the nav sets the data. */
 router.get('/Home', indexController.displayHomePage);
 
 /* GET About Us page. */
@@ -17,6 +25,8 @@ router.get('/Projects', indexController.displayProductsPage);
 
 /* GET Services page. */
 router.get('/Services', indexController.displayServicesPage);
+
+router.get('/resume', requireAuth, indexController.displayResume);
 
 /* GET Contact Us page. */
 router.get('/Contact', indexController.displayContactPage);

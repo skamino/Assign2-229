@@ -2,15 +2,36 @@
 
 <%- include partials/main_nav.ejs %>
   
-  <!-- Main Content <%- include partials/Home.ejs %>-->
+
+  <!-- Main Content -->
   <main>
+    
+    <% if (title == 'Home') { %>
+      <%- include partials/Home.ejs %>
+    <% } else { %>  
+    <% } %>
+     
+    <% if (title == 'About') { %>
+      <%- include partials/About.ejs %>
+    <% } else { %>
+      <% } %>
+
+      <% if (title == 'Contact') { %>
+        <%- include partials/Contact.ejs %>
+      <% } else { %>
+        <% } %>
+
+        <% if (title == 'Products') { %>
+          <%- include partials/Projects.ejs %>
+        <% } else { %>
+          <% } %>
+
+          <% if (title == 'Services') { %>
+            <%- include partials/Services.ejs %>
+          <% } else { %>
+            <% } %>
   </main>
   
 <%- include partials/bottom_nav.ejs %>  
 
 <%- include partials/footer.ejs %>
-  
-
-
-
-
