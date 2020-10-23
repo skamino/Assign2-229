@@ -1,78 +1,215 @@
-<!--
-File: services.ejs
-Name: Stephen Kamino
-StudentID: 822600292
-Date: Oct 09 2020
--->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Dashboard Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
 
 <div class="container-fluid">
-    <div class="row-fluid">
-      <div class="span3">
-        <div class="well sidebar-nav">
-          <ul class="nav nav-list">
-            <li class="nav-header">Web</li>
-            <li class="active"><a href="#">HTML</a></li>
-            <li><a href="#">Java Script</a></li>
-            <li><a href="#">NodeJS</a></li>
-            <li><a href="#">LAMP</a></li>
-            <li class="nav-header">Coding</li>
-            <li><a href="#">C Sharp</a></li>
-            <li><a href="#">Java</a></li>
-            <li><a href="#">C Plus Plus Slash C</a></li>
-            <li><a href="#">Python</a></li>
-            <li><a href="#">Bash Scripting</a></li>
-            <li><a href="#">Powershell</a></li>
-            <li class="nav-header">DataBase</li>
-            <li><a href="#">SQL</a></li>
-            <li><a href="#">MongoDB</a></li>
-            <li><a href="#">mySQL</a></li>
-          </ul>
-        </div><!--/.well -->
-      </div><!--/span-->
-      <div class="span9">
-        <div class="hero-unit">
-          <img href="" src="/Assets/images/s logo.png" alt="s logo" style="float: right;">
-          <h1>At your service!</h1>
-          <p>&nbsp;&nbsp;This is the services that I am currently offering.  If you haven't checked out my services page just follow the link and don't forget to subscribe (JK).  
-              I have been around a while and have aquired some knowledge.  If you want something just let me know.  <br>Thy will be done!
-          </p>
-          <p><a class="btn btn-primary btn-large">to Projects &raquo;</a></p>
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          
+          <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>DataBase</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h4>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <span data-feather="file"></span>
+              Java Script
+            </a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <span data-feather="file"></span>
+              NodeJS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shopping-cart"></span>
+              LAMP
+            </a>
+          </li>
+          <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Coding</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h4>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2"></span>
+              C Sharp
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              Java
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2"></span>
+              C Plus Plus Slash C
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Python
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2"></span>
+              Bash Scripting
+            </a>
+          </li>
+        </ul>
+
+        <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>DataBase</span>
+          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h5>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              SQL
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Mongo
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              mySQL
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Services</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Coding</strong>
+              <h3 class="mb-0">C Sharp</h3>
+              <div class="mb-1 text-muted">Bleeding Edge</div>
+              <p class="card-text mb-auto">A high level language that is highly applicable to Windows.  Will provide a good lanaguage that  will cover you for most situations.</p>
+              <a href="" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/Assets/images/redLaptop.jpg" width="200" height="250" alt="laptop">
+            </div>
+          </div>
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Web Design</strong>
+              <h3 class="mb-0">NodeJS</h3>
+              <div class="mb-1 text-muted">Express and Google</div>
+              <p class="mb-auto">Java Script has taken over the web.  There are more and more people interested in full stack develpers.  For the Internet if you have one tool in your arsenal it should be Java Script.</p>
+              <a href="" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/Assets/images/darkLaptop.jpg" width="200" height="250" alt="laptop">
+            </div>
+          </div>
+          
         </div>
 
-        <div class="row-fluid">
-          <h2>Coding</h2>
-          <div class="span4">
-            <h2>C Plus Plus / C</h2>
-            <p>&nbsp;&nbsp;An older and still very relevent language.  Used to create many lower level code projects and has found a new life in smaller embedded designs.</p>
-          </div><!--/span-->
-          <div class="span4">
-            <h2>C Sharp</h2>
-            <p>&nbsp;&nbsp;A managed language used with many windows applications.  A very easy to use language, with many libraries that can add very complex features.  Keeps production cost down with this handy tool.</p>
-          </div><!--/span-->
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <h3 class="mb-0">DataBase</h3>
+              <div class="mb-1 text-muted">Mongo</div>
+              <p class="mb-auto">This is the common data center for your NodeJS hosting platforms.  It has risen with Java Script in the past 10 years.  This trend will continue.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/Assets/images/world.jpg" width="200" height="250" alt="laptop">
+            </div>
+          </div>
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Coding</strong>
+              <h3 class="mb-0">Python</h3>
+              <div class="mb-1 text-muted">It can do almost anything</div>
+              <p class="card-text mb-auto">I would have never thought but there are somethings that C/C++ is not the best for.  For these gaps in the C/C++ is where you find Python, lurking like a snake in the tall grass.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/Assets/images/developer.jpg" width="200" height="250" alt="laptop">
+            </div>
+          </div>
+
         </div>
 
-        <div class="row-fluid">
-          <h2>Web</h2>
-          <div class="span4">
-            <h2>Java Script</h2>
-            <p>&nbsp;&nbsp;The power of the internet.  This is the language used to make use of the power of the browsers.  All of intuitive stuff that happens on the client side is run with javascript.  Experience faster loading today.</p>
-          </div><!--/span-->
-          <div class="span4">
-            <h2>NodeJS</h2>
-            <p>&nbsp;&nbsp;NodeJS the more modern server.  Having NodeJS on your backend will make managing the site better and more secure.  Consider going with this solution.</p>
-          </div><!--/span-->
-        </div>
-
-        <div class="row-fluid">
-          <h2>Database</h2>
-          <div class="span4">
-            <h2>SQL</h2>
-            <p>&nbsp;&nbsp;A very organized and specific style of database application.  Designed to handle business data.  For any type, or size of business this is your solution</p>
-          </div><!--/span-->
-          <div class="span4">
-            <h2>MongoDB</h2>
-            <p>&nbsp;&nbsp;The less organized option.  The data stored in these databases is closer to true metadata.  Researchers and AI people will agree that this is a great option.  Get creative with Mongo.</p>
-          </div><!--/span-->
-        </div>
-
-    <hr>
+      </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="dashboard.js"></script></body>
+</html>
